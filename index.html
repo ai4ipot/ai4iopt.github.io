@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!--   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>AI4IPoT: AI for Image Processing Applications on Traffic: Advancements, Challenges, and Opportunities</title>
@@ -18,29 +19,51 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link href="assets/css/mycss.css" rel="stylesheet" />
+    <script>
+        // 检测窗口宽度并添加或移除元素
+        function toggleElementBasedOnWidth() {
+            const minWidth = 1024; // 最小宽度阈值
+            const elementId = 't'; // 要操作的元素的 ID
+            const element = document.getElementById(elementId);
+            const currentWidth = window.innerWidth; // 获取当前窗口宽度;
+            if (currentWidth < minWidth) {
+                // 如果窗口宽度小于最小宽度且元素存在，则移除元素
+                element.style.display='none'
+            } else if (currentWidth >= 1024) {
+                // 如果窗口宽度大于或等于最小宽度且元素不存在，则添加元素
+              
+                element.style.display='flex'
+            }
+        }
+
+        // 监听窗口大小变化事件
+        window.addEventListener('resize', toggleElementBasedOnWidth);
+        document.addEventListener('DOMContentLoaded', toggleElementBasedOnWidth);
+        // 页面加载时执行一次检查
+        toggleElementBasedOnWidth();
+    </script>
     <style>
         hr {
             border: none;
             left: 0;
-            width: 98%;
+            width: 50%;
             height: 1px;
             background-color: #ffffff; /* 横线的颜色 */
             margin-top: 2px; /* 上边距 */
             margin-bottom: 2px; /* 下边距 */
         }
         .div-background {
-            /* background-image: url('assets/img/ICIP.jpg'); */
             margin:0px;
             background: url('assets/img/ICIP.jpg') no-repeat;
-            background-size:100% 94%;
-            background-attachment:fixed;
-
+            background-size: cover !important; 
+            background-position: center !important;
         }
         .ICIP_logo{
             width: 20%;
             mix-blend-mode: multiply;
         }
         .aim_logo{
+            z-index: 1;
             width: 12%;
             mix-blend-mode: multiply;
         }
@@ -91,6 +114,47 @@
             object-fit: cover; 
             object-position: center 15%;
         }
+        .image-container::after {
+            content: ""; 
+            display: block;
+            width: 22rem;
+            height: 1px;
+            background: #fff;
+            position: relative;
+            bottom: -1px;
+        }
+        @media (min-width: 576px){
+            .col-sm-3{
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+        @media (min-width: 768px){
+            .col-sm-3{
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+        @media (min-width: 1024px){
+            .col-sm-3{
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+        }
+        @media (max-width: 1024px){
+            .navlogo{
+                display: grid; 
+                width: 100%;
+                grid-template-columns: 1fr 3fr;
+            }
+            .buttonstyle{
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 
@@ -98,20 +162,27 @@
 <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div style="margin-left:40px;">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="" id="logo-nav-bar"
-                        src="assets/img/logo/ICIP 2024 LOGO CROPPED.webp" alt=""></a>
-                <hr>
-                <p style="color: #ffffff;font: 1em;">Trustworthy Visual Data Processing</p>
+        <div class="navlogo">
+            <div class="buttonstyle">
+                <button
+                    style="background-color: #006699 !important;"   
+                    class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                    type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
+            <div>
+                <div class="image-container">
+                    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                        <img id="logo-nav-bar" src="assets/img/logo/ICIP 2024 LOGO CROPPED.webp" alt=""></a>
+                </div>
+                <!-- <hr> -->
+                <p style="color: #ffffff;font: 0.9rem;">Trustworthy Visual Data Processing</p>
+            </div>
+        </div>
         <div class="container">
-            <button
-                class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
-                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-0 mx-lg-1">
@@ -146,7 +217,7 @@
     </nav>
 
     <!-- Masthead -->
-    <header class="masthead bg-primary text-white text-center div-background">
+    <header style="background-color: #ffffff !important;width: 100vw;" class="masthead bg-primary text-white text-center div-background">
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Heading -->
             <h1 class="masthead-heading mb-0">AI4IPoT</h1>
@@ -183,15 +254,22 @@
 
             <p class="lead text-justify">
 
-                This workshop is conceived as a cutting-edge academic forum focused on the intricate challenges and opportunities within intelligent traffic systems. It ambitiously extends its scope to cover not just the analysis of adverse weather conditions in video imagery but also spans across a broad spectrum of research areas, including multimodal sensor fusion, traffic behavior analysis, accident liability determination, multi-agent navigation, population density estimation, traffic flow forecasting, alongside addressing the complex needs of autonomous vehicle operations and traffic regulation improvements. The aim is to gather thought innovators from the domains of image processing, machine learning, artificial intelligence, and computer vision, leveraging the latest advancements in high-performance computing, multimedia analysis, and secure signal processing. Serving as a vibrant platform for sharing pioneering research findings and discussions on AI's role in surveillance, driver assistance, with a special focus on the integration and implications of large-scale model frameworks. The workshop encourages dialogue between distinguished academics and industry professionals to foster innovation and outline new directions for joint research. This initiative not only aims to fast-forward developments in autonomous driving but also advances sophisticated traffic management strategies, ensuring a thorough examination of these areas in a collaborative setting. The topics may include but not limit to:
+                This workshop is designed as a leading forum to explore complex challenges and opportunities in intelligent traffic systems. It covers diverse topics, including safety under adverse weather conditions, advanced scene reconstruction, visual perception for autonomous driving, multimodal sensor fusion, and behavioral analysis of traffic violations. The session aims to bring together pioneers from image processing and artificial intelligence to explore large models within intelligent transportation and autonomous driving systems. This forum encourages rich discussions on AI's role in surveillance and driver assistance, focusing on both large models and green computing strategies. The workshop facilitates dialogue between academics and industry experts to promote new ideas and explore new directions in autonomous driving and traffic management. Topics include, but are not limited to:
                 <br />
                 <ol class="lead">
-                    <li> Driving Behavior Analysis Techniques</li>
-                    <li> Intelligent Analysis of Traffic Violations</li>
-                    <li> Traffic Accident Investigation and Identification Techniques</li>
-                    <li> Vehicular and Roadside Sensing Technologies</li>
-                    <li> Multimodal Sensor Input and Fusion</li>
-                    <li> Large-scale AI Models for Traffic Management</li>
+                    <li> Scene Reconstruction and Visual Perception<br>
+                        "Advanced techniques for scene reconstruction and visual perception to improve accuracy in intelligent transportation and autonomous driving systems."</li>
+                    <li> Multimodal Sensor Fusion<br>
+                        "Strategies for integrating data from multimodal sensors to enhance environmental analysis and image quality in traffic systems."</li>
+                    <li> Safety Transportation under Adverse Weather Conditions<br>
+                        "Investigation of technologies that ensure vehicle safety under adverse weather conditions."
+                    </li>
+                    <li>  AI-Driven Traffic Management Systems<br>
+                        "Use of large models to optimize traffic flow and enhance functionalities in autonomous driving systems."</li>
+                    <li> Sustainable and Lightweight Traffic Technologies<br>
+                        "Development of sustainable traffic systems using green computing and lightweight processing to reduce energy consumption."</li>
+                    <li> Behavioral Analysis for Driving and Traffic Violations<br>
+                        "Analytical technologies for studying driving behaviors and detecting traffic violations."</li>
                 </ol>
                 
                 
@@ -315,8 +393,8 @@
         <div class="container">
             <ul class="lead">
                 <li>The AI4IPoT will be held together with ICIP 2024.</li>
-                <li>We encourage submissions of up to 4 pages, excluding references and acknowledgments. The submission should be in the ICIP format. Accepted papers will be published in ICIP proceedings. The template can be found via: <a href="https://cmsworkshops.com/ICIP2024/Papers/paper_kit.php"><button id="submit">template</button></a></li>
-                <li>Papers have to be submitted via <a href="https://cmsworkshops.com/ICIP2024/papers/submission.asp?Type=WS&amp;ID=11"><button id="submit">submit</button></a></li>
+                <li>We encourage submissions of up to 4 pages, excluding references and acknowledgments. The submission should be in the ICIP format. Accepted papers will be published in ICIP proceedings. The template can be found via: <a href="https://cmsworkshops.com/ICIP2024/Papers/paper_kit.php"><button id="submit">Template</button></a></li>
+                <li>Papers have to be submitted via <a href="https://cmsworkshops.com/ICIP2024/papers/submission.asp?Type=WS&amp;ID=11"><button id="submit">Submit a Paper</button></a></li>
             </ul>
         </div>
     </section>
@@ -334,7 +412,7 @@
                         <h4>Xian Zhong</h4>
                         <p class="text-secondary">Wuhan University of Technology</br>
                             Professor</br>
-                            &#8194
+                            IEEE Member</br>
                         </p>
                         <a class="btn btn-outline-secondary btn-social mx-1" href="https://scholar.google.com.hk/citations?user=fnulf2cAAAAJ"
                             target="_blank">
@@ -352,7 +430,7 @@
                         <h4>Wenxin Huang</h4>
                         <p class="text-secondary">Hubei University</br>
                             Associate Professor</br>
-                            &#8194
+                            IEEE Member</br>
                         </p>
                         <a class="btn btn-outline-secondary btn-social mx-1" href="https://scholar.google.com.hk/citations?user=TY2PC4CgIwkC"
                             target="_blank">
@@ -370,7 +448,7 @@
                         <h4>Zheng Wang</h4>
                         <p class="text-secondary">Wuhan University</br>
                             Professor</br>
-                            IEEE Senior Member
+                            IEEE Senior Member</br>
                         </p>
                         <a class="btn btn-outline-secondary btn-social mx-1" href="https://wangzwhu.github.io/home/"
                             target="_blank">
@@ -388,7 +466,7 @@
                         <h4>Yang Ruan</h4>
                         <p class="text-secondary">Meta</br>
                             Senior Staff Tech Lead (E7)</br>
-                            Senior Engineering Manager (M2) 
+                            Senior Engineering Manager (M2)</br>
                         </p>
                         <a class="btn btn-outline-secondary btn-social mx-1" href=""
                             target="_blank">
@@ -400,15 +478,15 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3" id="t">
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle avatar5" src="assets/img/team/chiawen.jpg" alt="">
                         <h4>Chia-wen Lin</h4>
-                        <p class="text-secondary">National Tsing Hua University
+                        <p class="text-secondary">National Tsing Hua University</br>
                             Professor</br>
-                            IEEE Fellow 
+                            IEEE Fellow </br>
                         </p>
                         <a class="btn btn-outline-secondary btn-social mx-1" href="https://www.ee.nthu.edu.tw/cwlin/"
                             target="_blank">
@@ -424,9 +502,9 @@
                     <div class="team-member">
                         <img class="mx-auto rounded-circle avatar6" src="assets/img/team/alex.jpg" alt="">
                         <h4>Alex Kot</h4>
-                        <p class="text-secondary">Nanyang Technological University
+                        <p class="text-secondary">Nanyang Technological University</br>
                             Professor</br>
-                            IEEE Life Fellow
+                            IEEE Life Fellow</br>
                         </p>
                         <a class="btn btn-outline-secondary btn-social mx-1" href="https://personal.ntu.edu.sg/eackot/"
                             target="_blank">

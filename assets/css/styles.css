@@ -10073,13 +10073,13 @@ h3 {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #ff944d/*#1abc9c*/;
+  color: #3399cc/*#ff944d/*#1abc9c*/;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #ff944d/*#1abc9c*/;
+  color: #3399cc;/*#ff944d/*#1abc9c*/;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10101,11 +10101,11 @@ h3 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #ff944d/*#1abc9c*/;
+    background: #3399cc/*#ff944d/*#1abc9c*/;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #ff944d/*#1abc9c*/;
+    background: #3399cc/*#ff944d/*#1abc9c*/;
   }
 
   #mainNav.navbar-shrink {
