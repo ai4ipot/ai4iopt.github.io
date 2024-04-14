@@ -13,7 +13,9 @@ and open the template in the editor.
 #assessment_more {display: none;}
 
 #logo-nav-bar{
-    height: 50px;
+    /*height: 50px;*/
+    height: 6rem;
+    width: 22rem;
 }
 
 b, strong {

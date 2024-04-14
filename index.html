@@ -18,15 +18,93 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link href="assets/css/mycss.css" rel="stylesheet" />
+    <style>
+        hr {
+            border: none;
+            left: 0;
+            width: 98%;
+            height: 1px;
+            background-color: #ffffff; /* 横线的颜色 */
+            margin-top: 2px; /* 上边距 */
+            margin-bottom: 2px; /* 下边距 */
+        }
+        .div-background {
+            /* background-image: url('assets/img/ICIP.jpg'); */
+            margin:0px;
+            background: url('assets/img/ICIP.jpg') no-repeat;
+            background-size:100% 94%;
+            background-attachment:fixed;
+
+        }
+        .ICIP_logo{
+            width: 20%;
+            mix-blend-mode: multiply;
+        }
+        .aim_logo{
+            width: 12%;
+            mix-blend-mode: multiply;
+        }
+        .aiac_logo{
+            width: 15%;
+            mix-blend-mode: multiply;
+        }
+        .rose_logo{
+            width: 12%;
+            mix-blend-mode: multiply;
+        }
+        #submit{
+            background-color: skyblue;
+            border: none;
+            border-radius: 12px;
+            color:white;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            -webkit-transition-duration: 0.4s;
+        }
+        .avatar1 {
+            object-fit: cover; 
+            object-position: center 20%;
+        }
+        .avatar2 {
+            object-fit: cover; 
+            object-position: center 20%;
+        }
+        .avatar3 {
+            object-fit: cover;
+            object-position: center 20%;
+        }
+        .avatar4 {
+            object-fit: cover;
+            object-position: center 10%;
+        }
+        .avatar5 {
+            object-fit: cover;
+            object-position: center 20%;
+        }
+        .avatar6 {
+            object-fit: cover; 
+            object-position: center 15%;
+        }
+    </style>
 </head>
 
 
 <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div style="margin-left:40px;">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="" id="logo-nav-bar"
+                        src="assets/img/logo/ICIP 2024 LOGO CROPPED.webp" alt=""></a>
+                <hr>
+                <p style="color: #ffffff;font: 1em;">Trustworthy Visual Data Processing</p>
+            </div>
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="" id="logo-nav-bar"
-                    src="assets/img/logo/ICIP 2024 LOGO CROPPED.webp" alt=""></a>
             <button
                 class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
                 type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
@@ -37,10 +115,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#topics">Scope</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#topics">Call for papers</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#paper">Planned Composition</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#paper">programme</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
@@ -68,7 +146,7 @@
     </nav>
 
     <!-- Masthead -->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary text-white text-center div-background">
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Heading -->
             <h1 class="masthead-heading mb-0">AI4IPoT</h1>
@@ -77,10 +155,18 @@
             <p class="masthead-subheading font-weight-light mb-0">
                 AI for Image Processing Applications on Traffic: Advancements, Challenges, and Opportunities
                 <br />
-                Co-located with 2024 IEEE International Conference on Image Processing (ICIP 2024), 27th-30th October 2024, Abu Dhabi, United Arab Emirates.
+                Co-located with 2024 IEEE International Conference on Image Processing (ICIP 2024)
+                <br/>
+                27th October 2024, Abu Dhabi, United Arab Emirates.
                 <br />
             </p>
-
+            <div>
+                <img src="assets/img/logo/ICIP 2024 LOGO CROPPED.webp" class="ICIP_logo" alt="ICIP_logo">
+                <br>
+                <img src="assets/img/logo/aim_logo.png" class="aim_logo" alt="aim_logo">
+                <img src="assets/img/logo/aiac_logo.jpg" class="aiac_logo" alt="aiac_logo">
+                <img src="assets/img/logo/rose_logo.png" class="rose_logo" alt="rose_logo">
+            </div>
         </div>
     </header>
 
@@ -90,7 +176,7 @@
         <div class="container">
 
             <!-- About Section Heading -->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Scope and Topics</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Call for Papers</h2>
 
 
             <!--<h3>Topics</h3>-->
@@ -124,7 +210,7 @@
         <div class="container">
 
             <!-- About Section Heading -->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Planned Composition</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">programme</h2>
 
 
             <!--<h3>Topics</h3>-->
@@ -229,8 +315,8 @@
         <div class="container">
             <ul class="lead">
                 <li>The AI4IPoT will be held together with ICIP 2024.</li>
-                <li>We encourage submissions of up to 4 pages, excluding references and acknowledgments. The submission should be in the ICIP format. Accepted papers will be published in ICIP proceedings. The template can be found via: <a href="https://cmsworkshops.com/ICIP2024/Papers/paper_kit.php">https://cmsworkshops.com/ICIP2024/Papers/paper_kit.php</a></li>
-                <li>Papers have to be submitted via <a href="https://cmsworkshops.com/ICIP2024/papers/submission.asp?Type=WS&amp;ID=11">https://cmsworkshops.com/ICIP2024/papers/submission.asp?Type=WS&amp;ID=11</a></li>
+                <li>We encourage submissions of up to 4 pages, excluding references and acknowledgments. The submission should be in the ICIP format. Accepted papers will be published in ICIP proceedings. The template can be found via: <a href="https://cmsworkshops.com/ICIP2024/Papers/paper_kit.php"><button id="submit">template</button></a></li>
+                <li>Papers have to be submitted via <a href="https://cmsworkshops.com/ICIP2024/papers/submission.asp?Type=WS&amp;ID=11"><button id="submit">submit</button></a></li>
             </ul>
         </div>
     </section>
@@ -244,9 +330,12 @@
             <div class="row mt-5">
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/zhongxian.jpg" alt="">
+                        <img class="mx-auto rounded-circle avatar1" src="assets/img/team/zhongxian.jpg" alt="">
                         <h4>Xian Zhong</h4>
-                        <p class="text-secondary">Wuhan University of Technology</p>
+                        <p class="text-secondary">Wuhan University of Technology</br>
+                            Professor</br>
+                            &#8194
+                        </p>
                         <a class="btn btn-outline-secondary btn-social mx-1" href="https://scholar.google.com.hk/citations?user=fnulf2cAAAAJ"
                             target="_blank">
                             <i class="fas fa-home"></i>
@@ -259,9 +348,12 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/wenxin.jpg" alt="">
+                        <img  class="mx-auto rounded-circle avatar2" src="assets/img/team/wenxin.jpg" alt="">
                         <h4>Wenxin Huang</h4>
-                        <p class="text-secondary">Hubei University</p>
+                        <p class="text-secondary">Hubei University</br>
+                            Associate Professor</br>
+                            &#8194
+                        </p>
                         <a class="btn btn-outline-secondary btn-social mx-1" href="https://scholar.google.com.hk/citations?user=TY2PC4CgIwkC"
                             target="_blank">
                             <i class="fas fa-home"></i>
@@ -274,9 +366,12 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/wangz.jpg" alt="">
+                        <img class="mx-auto rounded-circle avatar3" src="assets/img/team/wangz.jpg" alt="">
                         <h4>Zheng Wang</h4>
-                        <p class="text-secondary">Wuhan University</p>
+                        <p class="text-secondary">Wuhan University</br>
+                            Professor</br>
+                            IEEE Senior Member
+                        </p>
                         <a class="btn btn-outline-secondary btn-social mx-1" href="https://wangzwhu.github.io/home/"
                             target="_blank">
                             <i class="fas fa-home"></i>
@@ -289,9 +384,12 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/ruanyang.png" alt="">
+                        <img class="mx-auto rounded-circle avatar4" src="assets/img/team/ruanyang.jpg" alt="">
                         <h4>Yang Ruan</h4>
-                        <p class="text-secondary">Meta</p>
+                        <p class="text-secondary">Meta</br>
+                            Senior Staff Tech Lead (E7)</br>
+                            Senior Engineering Manager (M2) 
+                        </p>
                         <a class="btn btn-outline-secondary btn-social mx-1" href=""
                             target="_blank">
                             <i class="fas fa-home"></i>
@@ -303,10 +401,15 @@
                     </div>
                 </div>
                 <div class="col-sm-3">
+                </div>
+                <div class="col-sm-3">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/chiawen.jpg" alt="">
+                        <img class="mx-auto rounded-circle avatar5" src="assets/img/team/chiawen.jpg" alt="">
                         <h4>Chia-wen Lin</h4>
-                        <p class="text-secondary">National Tsing Hua University</p>
+                        <p class="text-secondary">National Tsing Hua University
+                            Professor</br>
+                            IEEE Fellow 
+                        </p>
                         <a class="btn btn-outline-secondary btn-social mx-1" href="https://www.ee.nthu.edu.tw/cwlin/"
                             target="_blank">
                             <i class="fas fa-home"></i>
@@ -319,9 +422,12 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/alex.jpg" alt="">
+                        <img class="mx-auto rounded-circle avatar6" src="assets/img/team/alex.jpg" alt="">
                         <h4>Alex Kot</h4>
-                        <p class="text-secondary">Nanyang Technological University</p>
+                        <p class="text-secondary">Nanyang Technological University
+                            Professor</br>
+                            IEEE Life Fellow
+                        </p>
                         <a class="btn btn-outline-secondary btn-social mx-1" href="https://personal.ntu.edu.sg/eackot/"
                             target="_blank">
                             <i class="fas fa-home"></i>

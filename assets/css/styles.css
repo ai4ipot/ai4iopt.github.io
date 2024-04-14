@@ -52,6 +52,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: 14px;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -6087,7 +6088,8 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #2c3e50 !important;
+  /*background-color: #2c3e50 !important;*/
+  background-color: #006699 !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -10057,7 +10059,7 @@ h3 {
 
 #mainNav {
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  /*padding-bottom: 1rem;*/
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
 }
@@ -10087,7 +10089,7 @@ h3 {
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    /*padding-bottom: 1.5rem;*/
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
@@ -10119,11 +10121,11 @@ h3 {
   padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
-  font-size: 2.75rem;
+  font-size: 2rem;
   line-height: 2.75rem;
 }
 .masthead .masthead-subheading {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 .masthead .masthead-avatar {
   width: 15rem;
@@ -10135,7 +10137,7 @@ h3 {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 4rem;
+    font-size: 2.5rem;
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
