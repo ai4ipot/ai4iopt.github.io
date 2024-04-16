@@ -56,7 +56,7 @@
             margin:0px;
             background: url('assets/img/ICIP.jpg') no-repeat;
             background-size: cover !important; 
-            background-position: center !important;
+            background-position: center 50% !important;
         }
         .ICIP_logo{
             width: 20%;
@@ -77,18 +77,11 @@
         }
         #submit{
             background-color: skyblue;
+            vertical-align: middle; /* 垂直居中对齐 */
             border: none;
-            border-radius: 12px;
+            margin-left: 10px; /* 文本和按钮之间的距离 */
             color:white;
-            padding: 10px 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            transition-duration: 0.4s;
-            -webkit-transition-duration: 0.4s;
+            border-radius: 8px;
         }
         .avatar1 {
             object-fit: cover; 
@@ -231,7 +224,7 @@
                 27th October 2024, Abu Dhabi, United Arab Emirates.
                 <br />
             </p>
-            <div>
+            <div style="padding-bottom: 5rem;">
                 <img src="assets/img/logo/ICIP 2024 LOGO CROPPED.webp" class="ICIP_logo" alt="ICIP_logo">
                 <br>
                 <img src="assets/img/logo/aim_logo.png" class="aim_logo" alt="aim_logo">
@@ -258,18 +251,18 @@
                 <br />
                 <ol class="lead">
                     <li> Scene Reconstruction and Visual Perception<br>
-                        "Advanced techniques for scene reconstruction and visual perception to improve accuracy in intelligent transportation and autonomous driving systems."</li>
+                        <i>Advanced techniques for scene reconstruction and visual perception to improve accuracy in intelligent transportation and autonomous driving systems.</i></li>
                     <li> Multimodal Sensor Fusion<br>
-                        "Strategies for integrating data from multimodal sensors to enhance environmental analysis and image quality in traffic systems."</li>
+                        <i>Strategies for integrating data from multimodal sensors to enhance environmental analysis and image quality in traffic systems.</i></li>
                     <li> Safety Transportation under Adverse Weather Conditions<br>
-                        "Investigation of technologies that ensure vehicle safety under adverse weather conditions."
+                        <i>Investigation of technologies that ensure vehicle safety under adverse weather conditions.</i>
                     </li>
                     <li>  AI-Driven Traffic Management Systems<br>
-                        "Use of large models to optimize traffic flow and enhance functionalities in autonomous driving systems."</li>
+                        <i>Use of large models to optimize traffic flow and enhance functionalities in autonomous driving systems.</i></li>
                     <li> Sustainable and Lightweight Traffic Technologies<br>
-                        "Development of sustainable traffic systems using green computing and lightweight processing to reduce energy consumption."</li>
+                        <i>Development of sustainable traffic systems using green computing and lightweight processing to reduce energy consumption.</i></li>
                     <li> Behavioral Analysis for Driving and Traffic Violations<br>
-                        "Analytical technologies for studying driving behaviors and detecting traffic violations."</li>
+                        <i>Analytical technologies for studying driving behaviors and detecting traffic violations.</i></li>
                 </ol>
                 
                 
@@ -307,7 +300,7 @@
                     </tr>
                     <tr>
                       <td>9:10-10:30  </td>
-                      <td>Session 1: Keynote Talks (2 speakers, 40 minutes for each)</td>
+                      <td>Session 1: Keynote Talks</td>
                     </tr>
                     <tr>
                       <td>10:30-10:45 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -315,11 +308,11 @@
                     </tr>
                     <tr>
                       <td>10:45-12:00</td>
-                      <td>Session 2: Oral Presentation (5 papers, 15 minutes for each)</td>
+                      <td>Session 2: Oral Presentation</td>
                     </tr>
                     <tr>
                       <td>12:00-12:45</td>
-                      <td>Session 3: Demo (2 challenge awards, 15 minutes for each)</td>
+                      <td>Session 3: Demo</td>
                     </tr>
                     <tr>
                       <td>12:45-12:50</td>
@@ -393,8 +386,8 @@
         <div class="container">
             <ul class="lead">
                 <li>The AI4IPoT will be held together with ICIP 2024.</li>
-                <li>We encourage submissions of up to 4 pages, excluding references and acknowledgments. The submission should be in the ICIP format. Accepted papers will be published in ICIP proceedings. The template can be found via: <a href="https://cmsworkshops.com/ICIP2024/Papers/paper_kit.php"><button id="submit">Template</button></a></li>
-                <li>Papers have to be submitted via <a href="https://cmsworkshops.com/ICIP2024/papers/submission.asp?Type=WS&amp;ID=11"><button id="submit">Submit a Paper</button></a></li>
+                <li>We encourage submissions of up to 6 pages, excluding references and acknowledgments. The submission should be in the ICIP format. Accepted papers will be published in ICIP proceedings. The template can be found via:<a href="https://cmsworkshops.com/ICIP2024/Papers/paper_kit.php"><button id="submit">Template</button></a></li>
+                <li>Papers have to be submitted via: <a href="https://cmsworkshops.com/ICIP2024/papers/submission.asp?Type=WS&amp;ID=11"><button id="submit">Submit a Paper</button></a></li>
             </ul>
         </div>
     </section>
@@ -436,7 +429,7 @@
                             target="_blank">
                             <i class="fas fa-home"></i>
                         </a>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="mailto:wenxinhuang_wh@163.com"
+                        <a class="btn btn-outline-secondary btn-social mx-1" href="mailto:wenxinhuang161@gmail.com"
                             target="_blank">
                             <svg t="1681180803353" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3223" width="200" height="200"><path d="M128 768V301.248l361.344 361.376a32.032 32.032 0 0 0 45.312 0L896 301.248V768H128z m384-173.248L173.248 256h677.504L512 594.752zM64 832h896V192H64v640z" fill="#2C3E50" p-id="3224"></path></svg>
                         </a>
@@ -501,7 +494,7 @@
                 <div class="col-sm-3">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle avatar6" src="assets/img/team/alex.jpg" alt="">
-                        <h4>Alex Kot</h4>
+                        <h4>Alex Chichung Kot</h4>
                         <p class="text-secondary">Nanyang Technological University</br>
                             Professor</br>
                             IEEE Life Fellow</br>
@@ -529,19 +522,23 @@
 
             <br>
             <ul class="text-justify">
+                <li><b>Wenxuan Liu</b>, Wuhan University of Technology, China</li>
+                <br>
                 <li><b>Xuemei Jia</b>, Wuhan University, China</li>
                 <br>
                 <li><b>Yakun Ju</b>, Nanyang Technological University, Singapore</li>
-                <br>
-                <li><b>Wenxuan Liu</b>, Wuhan University of Technology, China</li>
                 <br>
                 <li><b>Zhijing Wan</b>, National Institute of Informatics, Japan</li>
                 <br>
                 <li><b>Zhixiang Wang</b>, The University of Tokyo, Japan</li>
                 <br>
+                <li><b>Siyuan Yang</b>, Nanyang Technological University, Singapore</li>
+                <br>
                 <li><b>Zhengwei Yang</b>, Wuhan University, China</li>
                 <br>
                 <li><b>Xiaohan Yu</b>, Macquarie University, Australia</li>
+                <br>
+                <li><b>Xin Yuan</b>, Wuhan University of Science and Technology , China</li>
                 <br>
                 <li><b>Huilin Zhu</b>, Singapore Management University, Singapore</li>
                 <br>
@@ -559,13 +556,13 @@
             
             <br>
             <ul class="lead text-justify">
-                <li>Paper Submission Deadline: <b>May 24, 2024</b></li>
+                <li>Paper Submission Deadline: <b>May 9th, 2024</b></li>
                 <br>
-                <li>Paper Acceptance Notification: <b>June 6, 2024</b></li>
+                <li>Paper Acceptance Notification: <b>June 6th, 2024</b></li>
                 <br>
-                <li>Final Paper Submission Deadline: <b>June 19, 2024</b></li>
+                <li>Final Paper Submission Deadline: <b>June 19th, 2024</b></li>
                 <br>                
-                <li>Author Registration Deadline: <b>July 11, 2024</b></li>
+                <li>Author Registration Deadline: <b>July 11th, 2024</b></li>
                 <br>
             </ul>
         </div>
@@ -574,7 +571,7 @@
 
         <div class="container">
 
-            <h2 class="page-section-heading text-center text-uppercase">TENTATIVE KEYNOTES(updating)</h2>
+            <h2 class="page-section-heading text-center text-uppercase">TENTATIVE KEYNOTES (updating)</h2>
             <!-- <p class="lead"><b>Tentative Invited Speakers：</b></p> -->
             <ul class="lead">
                 <!-- <li>Houbing Song, Fellow IEEE, University of Maryland, Baltimore County  (UMBC), USA.  Title: AI/Machine Learning for Internet of Dependable and Controllable Things</li> -->
@@ -593,7 +590,7 @@
 
                 <!-- Footer Social Icons -->
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Follow AI4IPOT(updating)</h4>
+                    <h4 class="text-uppercase mb-4">Follow AI4IPOT (updating)</h4>
                     <!-- <a class="btn btn-outline-light btn-social mx-1" href="#">
                            <i class="fab fa-fw fa-facebook-f"></i>
                          </a> -->
