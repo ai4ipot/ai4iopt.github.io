@@ -43,6 +43,50 @@
         toggleElementBasedOnWidth();
     </script>
     <style>
+         .keynote-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .keynote-section h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .keynote-item {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            width: 80%;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .keynote-item h3 {
+            font-size: 1.8em;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .keynote-item p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .keynote-item .label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .keynote-item .time {
+            font-size: 1.1em;
+            color: #666;
+        }
         hr {
             border: none;
             left: 0;
@@ -279,37 +323,64 @@
             <!--<h3>Topics</h3>-->
 
             <p class="lead text-justify">
+                
                 The proposed workshop will include 2 invited talks and 5 paper presentations. The workshop will be considered for a half-day meeting.
-                <br />
-                <table>
-                    <tr>
-                      <th>Duration</th>
-                      <th>Title</th>
-                    </tr>
-                    <tr>
-                      <td>9:00-9:10</td>
-                      <td>Welcome + Opening</td>
-                    </tr>
-                    <tr>
-                      <td>9:10-10:30  </td>
-                      <td>Session 1: Keynote Talks</td>
-                    </tr>
-                    <tr>
-                      <td>10:30-10:45 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</td>
-                      <td>Short break</td>
-                    </tr>
-                    <tr>
-                      <td>10:45-12:00</td>
-                      <td>Session 2: Oral Presentation</td>
-                    </tr>
-                    <tr>
-                      <td>12:00-12:45</td>
-                      <td>Session 3: Demo</td>
-                    </tr>
-                    <tr>
-                      <td>12:45-12:50</td>
-                      <td>Closing</td>
-                    </tr>
+                <br/>
+                <p style="text-align: center;">
+                    <strong>Date and Time:</strong> Wednesday, October 30th, 14:30 — 18:00<br>
+                    <strong>Location:</strong> To Be Determined (TBD)
+                  </p>
+                <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                    <thead>
+                      <tr>
+                        <th style="text-align: left; padding: 10px; font-weight: bold; border-bottom: 2px solid #ddd; white-space: nowrap; width: 15%;">Duration</th>
+                        <th style="text-align: left; padding: 10px; font-weight: bold; border-bottom: 2px solid #ddd;">Title</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="padding: 10px; vertical-align: top; white-space: nowrap;">14:30 — 15:00</td>
+                        <td style="padding: 10px; vertical-align: top;">
+                          <strong>Opening Remarks and Introduction</strong><br>
+                          Keynote 1: <em>Review of Low-Quality Image Processing Research</em> — Prof. Xian Zhong
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 10px; vertical-align: top; white-space: nowrap;">15:00 — 16:00</td>
+                        <td style="padding: 10px; vertical-align: top;">
+                          <strong>Session 1: Oral Presentations</strong><br>
+                          <ul style="margin-left: 20px;">
+                            <li>Oral 1: <em>City Traffic Aware Multi-Target Tracking Prediction with Multi-Camera</em> — Kanglei Peng, Tuo Dong, Wanqin Zhang, Jianhui Zhang (15 minutes presentation + 5 minutes Q&A)</li>
+                            <li>Oral 2: <em>Dynamic Task-oriented Prompting for Generalized Aerial Category Discovery</em> — Muli Yang, Huaiyuan Qin, Hongyuan Zhu (15 minutes presentation + 5 minutes Q&A)</li>
+                            <li>Oral 3: <em>Light in the Dark: Cooperating Prior Knowledge and Prompt Learning for Low-Light Action Recognition</em> — Qi Liu, Shu Ye (15 minutes presentation + 5 minutes Q&A)</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 10px; white-space: nowrap;">16:00 — 16:30</td>
+                        <td style="padding: 10px;"><strong>Break</strong></td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 10px; vertical-align: top; white-space: nowrap;">16:30 — 17:10</td>
+                        <td style="padding: 10px; vertical-align: top;">
+                          <strong>Session 2: Oral Presentations</strong><br>
+                          <ul style="margin-left: 20px;">
+                            <li>Oral 4: <em>Robust ADAS: Enhancing Robustness of Machine Learning-Based Advanced Driver Assistance Systems for Adverse Weather</em> — Muhammad Zaeem Shahzad, Muhammad Abdullah Hanif, Muhammad Shafique (15 minutes presentation + 5 minutes Q&A)</li>
+                            <li>Oral 5: <em>Scenario-Adaptive Object Detection with Dual-branch Feature Pyramid Networks</em> — Tuo Dong, Yining Gu, Zhaoxu Zheng, Jianhui Zhang (15 minutes presentation + 5 minutes Q&A)</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 10px; white-space: nowrap;">17:10 — 17:50</td>
+                        <td style="padding: 10px;">
+                          <strong>Keynote Talk 2:</strong> <em>Visual Computing in Varying Resolution, Illumination, and Resource Conditions</em> — Prof. Weisi Lin
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 10px; white-space: nowrap;">17:50 — 18:00</td>
+                        <td style="padding: 10px;"><strong>Award Session and Closing Remarks</strong></td>
+                      </tr>
+                    </tbody>
                   </table>
                   
             </p>
@@ -595,11 +666,25 @@
 
         <div class="container">
 
-            <h2 class="page-section-heading text-center text-uppercase">TENTATIVE KEYNOTES (updating)</h2>
+            <!-- <h2 class="page-section-heading text-center text-uppercase">KEYNOTES</h2> -->
             <!-- <p class="lead"><b>Tentative Invited Speakers：</b></p> -->
             <ul class="lead">
-                <!-- <li>Houbing Song, Fellow IEEE, University of Maryland, Baltimore County  (UMBC), USA.  Title: AI/Machine Learning for Internet of Dependable and Controllable Things</li> -->
+                <!-- <li>Houbing Song, Fellow IEEE, University of Maryland, Baltimore County  (UMBC), USA.  Title: AI/Machine Learning for Internet of Dependable and Controllable Things</li>-->
                 <!-- <br> -->
+                <section class="keynote-section">
+                    <h2>KEYNOTES</h2>
+                    <div class="keynote-item">
+                      <h3>Keynote 1: Review of Low-Quality Image Processing Research</h3>
+                      <p><span class="label">Speaker:</span> Prof. Xian Zhong</p>
+                      <p class="time"><span class="label">Time:</span> 14:30 — 15:00</p>
+                    </div>
+                  
+                    <div class="keynote-item">
+                      <h3>Keynote 2: Visual Computing in Varying Resolution, Illumination, and Resource Conditions</h3>
+                      <p><span class="label">Speaker:</span> Prof. Weisi Lin</p>
+                      <p class="time"><span class="label">Time:</span> 17:10 — 17:50</p>
+                    </div>
+                  </section>
             </ul>
         </div>
     </section>
